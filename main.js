@@ -3,6 +3,12 @@ import mongoose from "mongoose";
 import multer from "multer";
 import cors from "cors";
 
+// Mongoose
+mongoose
+  .connect("")
+  .then(() => console.log("База данных подключена"))
+  .catch((err) => console.log("Ошибка при подключении базы данных", err));
+
 const app = express();
 const port = 7777;
 
